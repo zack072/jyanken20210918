@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sample.css">
+
+    <title>かだい</title>
+</head>
+
+<body>
+
+    <h1 class="iii">じゃんけん</h1>
+    <!-- <h1 class="aaa"><img src="img/ｷｬﾗｸﾀｰ修正/31.jpg" alt="炎パー君"></h1> -->
+
+    <main>
+        <ul>
+            <li id="pull">じゃんけんを選ぶ</li>
+        </ul>
+        <p id="echo">何がでるかな？</p>
+    </main>
+    <section>
+        <ul>
+            <li id="gu_btn">石</li>
+            <li id="cho_btn">✂</li>
+            <li id="par_btn">紙</li>
+        </ul>
+        <div class="iii" id="com_hand">相手は？</div>
+        <div class="iii" id="result">結果</div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+
+        $('#pull').on('click', function () {
+            const min = 0
+            const max = 7
+            const randomNuber = Math.floor(Math.random() * (max - min + 1)) + min
+            console.log(randomNuber)
+            if (randomNuber == 0) {
+                $("#echo").text("Stein");
+                $("#gu_btn").on("click", function () {
+                    $("#com_hand").text('グー');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/31.jpg" alt="引分け">');
+                });
+                $("#cho_btn").on("click", function () {
+                    $("#com_hand").text('グー');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/28.jpg" alt="負け">');
+                });
+                $("#par_btn").on("click", function () {
+                    $("#com_hand").text('グー');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/27.jpg" alt="勝ち">');
+                });
+            } else if (randomNuber == 1) {
+                $("#echo").text("Schere");
+                $("#gu_btn").on("click", function () {
+                    $("#com_hand").text('チョキ');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/27.jpg" alt="勝ち">');
+                });
+                $("#cho_btn").on("click", function () {
+                    $("#com_hand").text('チョキ');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/31.jpg" alt="引分け">');
+                });
+                $("#par_btn").on("click", function () {
+                    $("#com_hand").text('チョキ');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/28.jpg" alt="負け">');
+                });
+            } else if (randomNuber == 2) {
+                $("#echo").text("Scissors");
+                $("#gu_btn").on("click", function () {
+                    $("#com_hand").text('チョキ');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/27.jpg" alt="勝ち">');
+                });
+                $("#cho_btn").on("click", function () {
+                    $("#com_hand").text('チョキ');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/31.jpg" alt="引分け">');
+                });
+                $("#par_btn").on("click", function () {
+                    $("#com_hand").text('チョキ');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/28.jpg" alt="負け">');
+                });
+            } else if (randomNuber == 3) {
+                $("#echo").text("tijera");
+                $("#gu_btn").on("click", function () {
+                    $("#com_hand").text('チョキ');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/27.jpg" alt="勝ち">');
+                });
+                $("#cho_btn").on("click", function () {
+                    $("#com_hand").text('チョキ');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/31.jpg" alt="引分け">');
+                });
+                $("#par_btn").on("click", function () {
+                    $("#com_hand").text('チョキ');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/28.jpg" alt="負け">');
+                });
+            } else if (randomNuber == 4) {
+                $("#echo").text("Piedra");
+                $("#gu_btn").on("click", function () {
+                    $("#com_hand").text('グー');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/31.jpg" alt="引分け">');
+                });
+                $("#cho_btn").on("click", function () {
+                    $("#com_hand").text('グー');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/28.jpg" alt="負け">');
+                });
+                $("#par_btn").on("click", function () {
+                    $("#com_hand").text('グー');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/27.jpg" alt="勝ち">');
+                });
+            } else if (randomNuber == 5) {
+                $("#echo").text("Pierre");
+                $("#gu_btn").on("click", function () {
+                    $("#com_hand").text('グー');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/31.jpg" alt="引分け">');
+                });
+                $("#cho_btn").on("click", function () {
+                    $("#com_hand").text('グー');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/28.jpg" alt="負け">');
+                });
+                $("#par_btn").on("click", function () {
+                    $("#com_hand").text('グー');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/27.jpg" alt="勝ち">');
+                });
+            } else if (randomNuber == 6) {
+                $("#echo").text("Feuille");
+                $("#gu_btn").on("click", function () {
+                    $("#com_hand").text('パー');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/28.jpg" alt="負け">');
+                });
+                $("#cho_btn").on("click", function () {
+                    $("#com_hand").text('パー');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/27.jpg" alt="勝ち">');
+                });
+                $("#par_btn").on("click", function () {
+                    $("#com_hand").text('パー');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/31.jpg" alt="引分け">');
+                });
+            } else if (randomNuber == 7) {
+                $("#echo").text("Cieeaux");
+                $("#gu_btn").on("click", function () {
+                    $("#com_hand").text('チョキ');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/27.jpg" alt="勝ち">');
+                });
+                $("#cho_btn").on("click", function () {
+                    $("#com_hand").text('チョキ');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/31.jpg" alt="引分け">');
+                });
+                $("#par_btn").on("click", function () {
+                    $("#com_hand").text('チョキ');
+                    $("#result").html('<img src="img/ｷｬﾗｸﾀｰ修正/28.jpg" alt="負け">');
+                });
+            } else {
+                alert("それ以外");
+            }
+        });
+    </script>
+</body>
+<footer></footer>
+
+</html>
