@@ -1,6 +1,7 @@
 .iii{
     text-align: center;
     height: auto;
+    font-size: 3rem;
 }
 
 .aaa{
@@ -13,6 +14,7 @@ body{
     padding:0;
     text-align:left;
     font-size: 32px;
+    background-color: aqua;
 }
 header{
     background-color: #fff;
@@ -31,7 +33,7 @@ p{
     font-size:200%;
     text-align: center;
     border-bottom:1px solid #fff;
-    height:200px;
+    height:200px;    
 }
 ul{
     padding: 0;
@@ -50,9 +52,11 @@ li{
 }
 li:hover{
     background: #0066CC;
-    color:#fff;
+    color:#0066CC;
 }
 
-
+.ddd{
+    line-height: 50px;
+}
 
 
